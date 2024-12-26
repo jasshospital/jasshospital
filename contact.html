@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', 'poppins';
+            background: #FF00FF;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            max-width: 300px;
+            line-height: 1.5;
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-call {
+            background-color: #A020F0; /* Pink */
+            color: #fff;
+        }
+
+        .btn-call:hover {
+            background-color: #000000; /* Slightly darker pink */
+            transform: scale(1.05);
+        }
+
+        .btn-whatsapp {
+            background-color: #A020F0; /* Purple */
+            color: #fff;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #000000; /* Slightly darker purple */
+            transform: scale(1.05);
+        }
+
+        /* Spacing for Buttons */
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.85rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <p>Reach out to us easily through a call or WhatsApp message for assistance.</p>
+    <div class="btn-container">
+        <!-- Call Button -->
+        <a href="tel:+919360618121" class="btn btn-call">Call Us</a>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/+919360618121" class="btn btn-whatsapp">WhatsApp Us</a>
+    </div>
+    <footer>&copy; 2024 JASS Hospital | All Rights Reserved</footer>
+</body>
+</html>
