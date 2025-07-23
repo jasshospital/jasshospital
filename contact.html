@@ -1,94 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Montserrat', 'poppins';
-            background: #FF00FF;
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        
-        h1 {
-            margin-bottom: 10px;
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: 30px;
-            max-width: 300px;
-            line-height: 1.5;
-        }
-
-        /* Button Styles */
-        .btn {
-            display: inline-block;
-            padding: 12px 20px;
-            font-size: 1rem;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-call {
-            background-color: #A020F0; /* Pink */
-            color: #fff;
-        }
-
-        .btn-call:hover {
-            background-color: #000000; /* Slightly darker pink */
-            transform: scale(1.05);
-        }
-
-        .btn-whatsapp {
-            background-color: #A020F0; /* Purple */
-            color: #fff;
-        }
-
-        .btn-whatsapp:hover {
-            background-color: #000000; /* Slightly darker purple */
-            transform: scale(1.05);
-        }
-
-        /* Spacing for Buttons */
-        .btn-container {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 10px;
-            font-size: 0.85rem;
-            color: #fff;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Best Hospital in Chennai | JASS Hospital</title>
+  <meta name="description" content="Contact JASS Hospital, Chennai’s top multi-specialty hospital for orthopedics, diabetes, pediatrics, emergencies, and more. Reach us for appointments and expert care." />
+  <meta name="keywords" content="hospital in chennai, best hospital chennai, orthopedic hospital, pediatric care, diabetes treatment, multispecialty hospital, emergency care, rehabilitation, health services chennai, 24/7 hospital, JASS Hospital Kolathur, hospital villivakkam, leading hospital in Chennai" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="JASS Hospital" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+      background:
+        linear-gradient(rgba(255,255,255,0.55), rgba(244,247,251,0.70)),
+        url('hospital.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: #1B0145;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 38px;
+      font-size: 2.3rem;
+      color: #E60067;
+      font-weight: 800;
+      letter-spacing: 1.1px;
+      background: none;
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      text-shadow: 0 2px 12px #fff;
+    }
+    .divider {
+      width: 60px;
+      height: 5px;
+      background: linear-gradient(90deg, #36CFFF 10%, #E60067 90%);
+      border-radius: 8px;
+      margin: 0 auto 22px auto;
+    }
+    p {
+      font-size: 1.15rem;
+      background: rgba(255,255,255,0.83);
+      color: #1B0145;
+      padding: 24px 27px 20px;
+      margin: 0 0 38px 0;
+      border-radius: 0 0 14px 14px;
+      max-width: 430px;
+      box-shadow: 0 8px 32px rgba(54,207,255,0.09);
+      line-height: 1.7;
+      backdrop-filter: blur(1px);
+    }
+    .btn-container {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 45px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 34px;
+      font-size: 1.13rem;
+      font-weight: 700;
+      border-radius: 45px;
+      text-decoration: none;
+      border: none;
+      background: linear-gradient(90deg,#36CFFF 0%, #E60067 100%);
+      color: #fff;
+      box-shadow: 0 6px 22px rgba(54, 207, 255, 0.11), 0 2px 9px rgba(230, 0, 103, 0.09);
+      transition: background 0.23s, box-shadow 0.22s, transform 0.14s;
+      outline: none;
+      cursor: pointer;
+      letter-spacing: .5px;
+    }
+    .btn:focus,
+    .btn:hover {
+      background: linear-gradient(90deg, #E60067 20%, #36CFFF 90%);
+      box-shadow: 0 10px 32px rgba(230,0,103,0.17), 0 4px 24px rgba(54,207,255,0.13);
+      transform: scale(1.09);
+    }
+    footer {
+      background: #E60067;
+      color: #fff;
+      font-size: 1.07rem;
+      font-weight: bold;
+      width: 100vw;
+      text-align: center;
+      padding: 13px 0 11px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0px -3px 18px rgba(230,0,103,0.09);
+      letter-spacing: .6px;
+      user-select: none;
+      opacity: 0.97;
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 1.8rem; margin-top: 24px; }
+      p { font-size: 1rem; padding: 20px 15px 18px; max-width: 95vw; }
+      .btn { font-size: 1rem; padding: 13px 22vw; }
+      .divider { width: 40px; height: 4px; }
+      footer { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <p>Reach out to us easily through a call or WhatsApp message for assistance.</p>
-    <div class="btn-container">
-        <!-- Call Button -->
-        <a href="tel:+919360618121" class="btn btn-call">Call Us</a>
-        <!-- WhatsApp Button -->
-        <a href="https://wa.me/+919360618121" class="btn btn-whatsapp">WhatsApp Us</a>
-    </div>
-    <footer>&copy; 2024 JASS Hospital | All Rights Reserved</footer>
+  <h1>Contact Us – JASS Hospital, Chennai</h1>
+  <div class="divider"></div>
+  <p>
+    Connect with Chennai’s leading multi-specialty hospital for <strong>orthopedic care</strong>, <strong>diabetes treatment</strong>, <strong>pediatric and emergency services</strong>, <strong>rehabilitation</strong>, and comprehensive health packages.<br />
+    <strong>Call our expert doctors or WhatsApp for 24/7 bookings, guidance, and support.</strong>
+  </p>
+  <div class="btn-container">
+    <a href="tel:+919360618121" class="btn" aria-label="Call JASS Hospital">Call Us</a>
+    <a href="https://wa.me/+919360618121" class="btn" aria-label="WhatsApp JASS Hospital">WhatsApp Us</a>
+  </div>
+  <footer>
+    &copy; 2024 JASS Hospital | Best Hospital in Chennai for Orthopedics, Diabetes, Pediatrics, Emergency & Rehab Care.
+  </footer>
 </body>
 </html>
